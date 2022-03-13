@@ -1,0 +1,31 @@
+{
+    "dandas": [
+      {
+        "danda_id":1,
+        "buying_price":0
+      }
+    ],
+    "gulis": [
+      {
+        "guli_id":1,
+        "buying_price":0
+      }
+    ],
+    "environments": [
+     {
+       "environment_id":1,
+       "unlock_cost":0,
+       "environment_name":"TownRoad"
+     }
+
+    ],
+    "player_id": "",
+    "player_firebase_id": "",
+    "player_name": "",
+    "total_coin": 200000,
+    "current_danda": 1,
+    "current_guli": 1,
+    "total_match":0,
+    "total_win":0    
+
+  }
