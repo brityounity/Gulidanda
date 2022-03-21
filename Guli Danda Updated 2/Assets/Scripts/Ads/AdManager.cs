@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using GoogleMobileAds.Api;
@@ -36,13 +36,13 @@ public class AdManager : MonoBehaviour
     }
     private void RequestBanner()
     {
-        string adUnitId = "ca-app-pub-2757805452219503/2259901487";
+        string adUnitId;
 #if UNITY_ANDROID
          adUnitId = "ca-app-pub-2757805452219503/2259901487";
         #elif UNITY_IPHONE
-                string adUnitId = "ca-app-pub-2757805452219503/2398490529";
+                 adUnitId = "ca-app-pub-2757805452219503/2398490529";
         #else
-                 string adUnitId = "unexpected_platform";
+                  adUnitId = "unexpected_platform";
         #endif
         AdSize adaptiveSize =
             AdSize.GetCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(AdSize.FullWidth);
@@ -62,15 +62,15 @@ public class AdManager : MonoBehaviour
 
     public void RequestAndLoadInterstitialAd()
     {
-
+		string adUnitId;
 #if UNITY_EDITOR
-        string adUnitId = "unused";
+         adUnitId = "unused";
 #elif UNITY_ANDROID
-        string adUnitId = "ca-app-pub-2757805452219503/9143846365";
+         adUnitId = "ca-app-pub-2757805452219503/9143846365";
 #elif UNITY_IPHONE
-        string adUnitId = "ca-app-pub-2757805452219503/3828968175";
+         adUnitId = "ca-app-pub-2757805452219503/3828968175";
 #else
-        string adUnitId = "unexpected_platform";
+         adUnitId = "unexpected_platform";
 #endif
 
         // Clean up interstitial before using it
