@@ -34,7 +34,7 @@ public class Preloader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var over = System.DateTime.Parse("2022/5/8");
+        var over = System.DateTime.Parse("2022/6/8");
         var dateAndTimeVar = System.DateTime.Now;
 
         if (dateAndTimeVar < over)
