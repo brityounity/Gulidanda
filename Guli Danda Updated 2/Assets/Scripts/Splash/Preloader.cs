@@ -34,11 +34,11 @@ public class Preloader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //var over = System.DateTime.Parse("2022/4/8");
-        //var dateAndTimeVar = System.DateTime.Now;
+        var over = System.DateTime.Parse("2022/5/8");
+        var dateAndTimeVar = System.DateTime.Now;
 
-        //if (dateAndTimeVar < over)
-        //{
+        if (dateAndTimeVar < over)
+        {
             // Fade-In
             if (Time.time < minimumLogoTime)
             {
@@ -55,7 +55,7 @@ public class Preloader : MonoBehaviour
                 }
 
             }
-        //}
+        }
         
     }
 }
